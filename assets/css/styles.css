@@ -30,6 +30,14 @@ a {
 }
 
 input,
+textarea,
+select,
+button {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+input,
 button {
     border: none;
     outline: none;
@@ -63,6 +71,7 @@ button {
     border-radius: 6px;
     color: #fff;
     background: #212832;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -302,8 +311,11 @@ button {
     column-gap: 230px;
 }
 
-.work__media-wrap {
+.work__media {
     position: relative;
+}
+
+.work__media-wrap {
     width: 470px;
 }
 
@@ -416,4 +428,240 @@ button {
     margin-top: 16px;
     font-size: 1.6rem;
     line-height: 1.75;
+}
+
+/* Payment, Deposit */
+.payment {
+    padding: 80px 0;
+}
+
+.payment__inner {
+    display: flex;
+    align-items: center;
+    column-gap: 130px;
+}
+
+.payment__content-heading {
+    width: 470px;
+    margin-top: 12px;
+    font-size: 4rem;
+    line-height: 1.25;
+}
+
+.payment__content-desc {
+    margin-top: 20px;
+    width: 470px;
+    line-height: 1.66;
+}
+
+.payment__content-list {
+    margin-top: 28px;
+}
+
+.payment__content-item {
+    display: flex;
+    align-items: center;
+    color: #212832;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.66;
+}
+
+.payment__content-item::before {
+    display: inline-block;
+    content: "";
+    margin-right: 12px;
+    width: 12px;
+    height: 12px;
+    background: var(--primary-color);
+    border-radius: 50%;
+}
+
+.payment__content-item + .payment__content-item {
+    margin-top: 18px;
+}
+
+.payment__content-btn {
+    margin-top: 38px;
+    min-width: 149px;
+}
+
+.payment__card {
+    position: relative;
+}
+
+.payment__card-wrap {
+    position: relative;
+    width: 482px;
+    height: 322px;
+    padding: 38px;
+    border-radius: 20px;
+    background: var(--primary-color);
+    overflow: hidden;
+}
+
+.payment__card-wrap::before,
+.payment__card-wrap::after {
+    position: absolute;
+    content: "";
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.payment__card-wrap::before {
+    top: 38px;
+    right: 70px;
+    background: #fe6565;
+}
+
+.payment__card-wrap::after {
+    top: 38px;
+    right: 38px;
+    background: #f9e746;
+    opacity: 0.8;
+}
+
+.payment__card-decor {
+    position: absolute;
+}
+
+.payment__card-decor-top {
+    top: 0;
+    left: 0;
+}
+
+.payment__card-decor-bottom {
+    right: 0;
+    bottom: 0;
+}
+
+.payment__card-content {
+    position: relative;
+    color: #fff;
+    z-index: 1;
+}
+
+.payment__card-heading {
+    font-size: 2.4rem;
+    margin-bottom: 24px;
+}
+
+.payment__card-price {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.payment__card-info {
+    margin-top: 116px;
+    display: flex;
+    column-gap: 26px;
+}
+
+.payment__card-valid,
+.payment__card-owner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.payment__card-valid span:first-child,
+.payment__card-owner span:last-child {
+    font-size: 2rem;
+}
+
+.payment__card-valid span:last-child,
+.payment__card-owner span:first-child {
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.payment__card-send {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: -48px;
+    right: -88px;
+    column-gap: 14px;
+    padding: 23px 13px;
+    width: 276px;
+    height: 86px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.07);
+}
+
+.payment__card-send-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: #fbefef;
+}
+
+.payment__card-send-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    width: 100%;
+}
+
+.payment__card-send-top,
+.payment__card-send-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment__card-send-top {
+    color: #212832;
+    font-family: Inter, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.payment__card-send-price {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.payment__card-send-bottom {
+    color: var(--primary-text);
+    font-family: Inter, sans-serif;
+    font-size: 1rem;
+}
+
+.payment__card-income {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: -88px;
+    bottom: -55px;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding: 15px;
+    width: 120px;
+    height: 120px;
+    border-radius: 16px;
+    background: #439f90;
+}
+
+.payment__card-income-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.payment__card-income-price {
+    padding-top: 12px;
+    font-size: 1.8rem;
+    font-weight: 600;
 }
