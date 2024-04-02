@@ -64,7 +64,7 @@ button {
     align-items: center;
     justify-content: center;
     min-width: 113px;
-    height: 52px;
+    height: 58px;
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 1.75;
@@ -143,6 +143,10 @@ button {
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 1.75;
+}
+
+.header__action-link {
+    height: 52px;
 }
 
 /* Hero */
@@ -431,34 +435,45 @@ button {
 }
 
 /* Payment, Deposit */
-.payment {
+.payment,
+.deposit {
     padding: 80px 0;
 }
 
-.payment__inner {
+.payment__inner,
+.deposit__inner {
     display: flex;
     align-items: center;
     column-gap: 130px;
 }
 
-.payment__content-heading {
+.deposit__inner {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.payment__content-heading,
+.deposit__content-heading {
     width: 470px;
     margin-top: 12px;
     font-size: 4rem;
     line-height: 1.25;
 }
 
-.payment__content-desc {
+.payment__content-desc,
+.deposit__content-desc {
     margin-top: 20px;
     width: 470px;
     line-height: 1.66;
 }
 
-.payment__content-list {
+.payment__content-list,
+.deposit__content-list {
     margin-top: 28px;
 }
 
-.payment__content-item {
+.payment__content-item,
+.deposit__content-item {
     display: flex;
     align-items: center;
     color: #212832;
@@ -467,7 +482,8 @@ button {
     line-height: 1.66;
 }
 
-.payment__content-item::before {
+.payment__content-item::before,
+.deposit__content-item::before {
     display: inline-block;
     content: "";
     margin-right: 12px;
@@ -481,11 +497,17 @@ button {
     margin-top: 18px;
 }
 
-.payment__content-btn {
+.deposit__content-item + .deposit__content-item {
+    margin-top: 18px;
+}
+
+.payment__content-btn,
+.deposit__content-btn {
     margin-top: 38px;
     min-width: 149px;
 }
 
+/* Payment card */
 .payment__card {
     position: relative;
 }
@@ -664,4 +686,73 @@ button {
     padding-top: 12px;
     font-size: 1.8rem;
     font-weight: 600;
+}
+
+/* Deposit media */
+.deposit__media {
+    position: relative;
+}
+
+.deposit__media::before {
+    position: absolute;
+    content: url(../icons/currency.svg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 288px;
+    right: -100px;
+    padding-top: 2px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    z-index: 1;
+}
+
+.deposit__media-wrap {
+    width: 470px;
+}
+
+.deposit__media-img {
+    width: 100%;
+}
+
+.deposit__media-payment-method {
+    position: absolute;
+    right: -74px;
+    bottom: 57px;
+    padding: 28px;
+    width: 281px;
+    height: 220px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0px 44px 48px rgba(0, 0, 0, 0.1);
+}
+
+.deposit__media-payment-title {
+    color: #212832;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.66;
+}
+
+.deposit__media-payment-method-list {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.deposit__media-payment-method-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 63px;
+    height: 48px;
+    border-radius: 8px;
+    background: #f2f2fa;
+}
+
+.deposit__media-payment-method-item:last-child {
+    background: #f9ea63;
 }
