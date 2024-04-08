@@ -16,6 +16,11 @@
             href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
             rel="stylesheet"
         />
+        <!-- Animation -->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
         <!-- Favicon -->
         <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon" />
         <link
@@ -121,7 +126,9 @@
                                 </a>
                             </li>
                             <li class="navbar__item">
-                                <a href="#blog" class="navbar__item-link">Blog</a>
+                                <a href="#blog" class="navbar__item-link"
+                                    >Blog</a
+                                >
                             </li>
                         </ul>
                     </nav>
@@ -146,7 +153,10 @@
                     <!-- Hero content -->
                     <section class="hero__content">
                         <p class="section-name">Digital Smart Wallet</p>
-                        <h1 class="section-heading hero__content-heading">
+                        <h1
+                            class="section-heading hero__content-heading"
+                            data-aos="flip-up"
+                        >
                             Digital
                             <strong class="hero__content-heading-highlight">
                                 Payment
@@ -198,7 +208,10 @@
                                 alt=""
                                 class="hero__media-img"
                             />
-                            <div class="hero__media-deposit">
+                            <div
+                                class="hero__media-deposit"
+                                data-aos="fade-down"
+                            >
                                 <img
                                     class="hero__media-deposit-img"
                                     src="./assets/icons/download.svg"
@@ -209,13 +222,16 @@
                                     $32000
                                 </span>
                             </div>
-                            <div class="hero__media-interest">
+                            <div
+                                class="hero__media-interest"
+                                data-aos="fade-left"
+                            >
                                 <span class="hero__media-interest-number">
                                     0%
                                 </span>
                                 Interest
                             </div>
-                            <div class="hero__media-secured">
+                            <div class="hero__media-secured" data-aos="fade-up">
                                 <img
                                     src="./assets/icons/secured.svg"
                                     alt=""
@@ -249,7 +265,7 @@
                                     class="work__media-img"
                                 />
                             </figure>
-                            <div class="work__media-card">
+                            <div class="work__media-card" data-aos="fade-down">
                                 <svg
                                     width="28"
                                     height="23"
@@ -279,7 +295,10 @@
                                     />
                                 </svg>
                             </div>
-                            <div class="work__media-congratulation">
+                            <div
+                                class="work__media-congratulation"
+                                data-aos="fade-left"
+                            >
                                 <div class="work__media-congratulation-check">
                                     <svg
                                         width="12"
@@ -430,7 +449,10 @@
                             </div>
 
                             <!-- Send -->
-                            <div class="payment__card-send">
+                            <div
+                                class="payment__card-send"
+                                data-aos="zoom-in-left"
+                            >
                                 <div class="payment__card-send-icon">
                                     <svg
                                         width="20"
@@ -464,7 +486,10 @@
                             </div>
 
                             <!-- Income -->
-                            <div class="payment__card-income">
+                            <div
+                                class="payment__card-income"
+                                data-aos="flip-left"
+                            >
                                 <div class="payment__card-income-icon">
                                     <svg
                                         width="15"
@@ -968,21 +993,25 @@
                                 src="./assets/img/decor-app.svg"
                                 alt=""
                                 class="app__decor-img"
+                                data-aos="fade-right"
                             />
                             <img
                                 src="./assets/img/decor-app.svg"
                                 alt=""
                                 class="app__decor-img"
+                                data-aos="fade-left"
                             />
                             <img
                                 src="./assets/img/decor-app.svg"
                                 alt=""
                                 class="app__decor-img"
+                                data-aos="fade-right"
                             />
                             <img
                                 src="./assets/img/decor-app.svg"
                                 alt=""
                                 class="app__decor-img"
+                                data-aos="fade-left"
                             />
                         </figure>
 
@@ -1172,5 +1201,10 @@
             </div>
         </footer>
         <script src="./assets/js/slider.js"></script>
+        <!-- AOS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
