@@ -62,7 +62,7 @@ button {
 }
 
 .section-name {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     font-size: 1.6rem;
     line-height: 1.75;
@@ -982,4 +982,96 @@ button {
     font-size: 1.6rem;
     line-height: 1.62;
     transition: color 0.3s ease;
+}
+
+/* App */
+.app {
+    margin: 160px 0 100px;
+}
+
+.app__inner {
+    position: relative;
+    text-align: center;
+    padding: 100px 0;
+    border-radius: 24px;
+    background: #7264d6;
+}
+
+.app__decor-img {
+    position: absolute;
+}
+
+.app__decor-img:first-child {
+    top: 49px;
+    left: 112px;
+}
+
+.app__decor-img:nth-child(2) {
+    top: 49px;
+    right: 112px;
+}
+
+.app__decor-img:nth-child(3) {
+    left: 166px;
+    bottom: 49px;
+}
+
+.app__decor-img:nth-child(4) {
+    right: 166px;
+    bottom: 49px;
+}
+
+.app__title,
+.app__heading,
+.app__desc {
+    color: #fff;
+}
+
+.app__title::before {
+    background: #fff;
+}
+
+.app__desc {
+    margin: 18px auto 0;
+    width: 435px;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+.app__cta {
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    column-gap: 16px;
+}
+
+.app__cta-google,
+.app__cta-app-store {
+    display: flex;
+    column-gap: 6px;
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    padding: 18px 31px;
+    width: 182px;
+    height: 64px;
+    border-radius: 6px;
+    background: #fff;
+}
+
+.app__cta-google:hover,
+.app__cta-app-store:hover {
+    opacity: 0.9;
+}
+
+.app__cta-google-info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.app__cta-google-title {
+    font-size: 1.7rem;
+    font-weight: 600;
+    white-space: nowrap;
 }
