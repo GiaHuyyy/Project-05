@@ -96,7 +96,7 @@
             <div class="container">
                 <div class="header__inner">
                     <!-- Logo -->
-                    <a href="#!">
+                    <a href="#">
                         <img src="./assets/img/Logo.svg" alt="" class="logo" />
                     </a>
                     <!-- Navbar -->
@@ -104,24 +104,24 @@
                         <ul class="navbar__list">
                             <li class="navbar__item">
                                 <a
-                                    href="#!"
+                                    href="#"
                                     class="navbar__item-link navbar__item-link-active"
                                 >
                                     Home
                                 </a>
                             </li>
                             <li class="navbar__item">
-                                <a href="#!" class="navbar__item-link">
+                                <a href="#work" class="navbar__item-link">
                                     Products
                                 </a>
                             </li>
                             <li class="navbar__item">
-                                <a href="#!" class="navbar__item-link">
+                                <a href="#payment" class="navbar__item-link">
                                     Features
                                 </a>
                             </li>
                             <li class="navbar__item">
-                                <a href="#!" class="navbar__item-link">Blog</a>
+                                <a href="#blog" class="navbar__item-link">Blog</a>
                             </li>
                         </ul>
                     </nav>
@@ -167,11 +167,17 @@
                             <input
                                 type="email"
                                 name="email"
-                                placeholder="Your email address"
+                                id="hero-email"
+                                placeholder=" "
                                 class="hero__content-form-input"
                                 required
                                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                             />
+                            <label
+                                for="hero-email"
+                                class="hero__content-form-input-label"
+                                >Your email address</label
+                            >
                             <button
                                 type="submit"
                                 class="btn hero__content-form-submit"
@@ -231,7 +237,7 @@
         <!-- Main -->
         <main>
             <!-- Work -->
-            <section class="work">
+            <section id="work" class="work">
                 <div class="container">
                     <div class="work__inner">
                         <!-- Work media -->
@@ -355,7 +361,7 @@
             </section>
 
             <!-- Payment -->
-            <section class="payment">
+            <section id="payment" class="payment">
                 <div class="container">
                     <div class="payment__inner">
                         <!-- Payment content -->
@@ -837,7 +843,7 @@
             </section>
 
             <!-- Blog -->
-            <section class="blog">
+            <section id="blog" class="blog">
                 <div class="container">
                     <div class="blog__inner">
                         <!-- Blog top -->
@@ -1121,12 +1127,19 @@
                                 <input
                                     type="email"
                                     name="email"
-                                    id=""
-                                    placeholder="Email address..."
+                                    id="subscribe-email"
+                                    placeholder=" "
                                     class="subscribe__form-input"
                                     required
+                                    length="2"
                                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                                 />
+                                <label
+                                    for="subscribe-email"
+                                    class="subscribe__form-label"
+                                >
+                                    Email address...
+                                </label>
                                 <button
                                     type="submit"
                                     class="btn subscribe__form-btn"
