@@ -145,14 +145,12 @@
                 <div class="hero__inner">
                     <!-- Hero content -->
                     <section class="hero__content">
-                        <p class="section-desc section-name">
-                            Digital Smart Wallet
-                        </p>
+                        <p class="section-name">Digital Smart Wallet</p>
                         <h1 class="section-heading hero__content-heading">
                             Digital
-                            <strong class="hero__content-heading-highlight"
-                                >Payment</strong
-                            >
+                            <strong class="hero__content-heading-highlight">
+                                Payment
+                            </strong>
                             For Everyone.
                         </h1>
                         <p class="section-desc hero__content-desc">
@@ -160,15 +158,26 @@
                             websites and apps that accept payments and send
                             payouts globally. We are the best platform.
                         </p>
-                        <form action="" class="hero__content-form">
+                        <form
+                            method="post"
+                            action="https://api-gateway.fullstack.edu.vn/action_page.php"
+                            autocomplete="off"
+                            class="hero__content-form"
+                        >
                             <input
-                                type="text"
+                                type="email"
+                                name="email"
                                 placeholder="Your email address"
                                 class="hero__content-form-input"
+                                required
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                             />
-                            <a href="#!" class="btn hero__content-form-submit">
+                            <button
+                                type="submit"
+                                class="btn hero__content-form-submit"
+                            >
                                 Get Started
-                            </a>
+                            </button>
                         </form>
                         <p class="section-desc hero__content-note">
                             *We’ll respect the inbox and never share your email.
@@ -220,7 +229,7 @@
         </section>
 
         <!-- Main -->
-        <main style="height: 5000px">
+        <main>
             <!-- Work -->
             <section class="work">
                 <div class="container">
@@ -294,9 +303,7 @@
 
                         <!-- Work content -->
                         <section class="work__content">
-                            <p class="section-desc section-name">
-                                Digital Smart Wallet
-                            </p>
+                            <p class="section-name">Digital Smart Wallet</p>
                             <h2 class="section-heading">How It Works</h2>
                             <section class="work__content-list">
                                 <!-- Item 1 -->
@@ -353,9 +360,7 @@
                     <div class="payment__inner">
                         <!-- Payment content -->
                         <section class="payment__content">
-                            <p class="section-desc section-name">
-                                Digital Smart Wallet
-                            </p>
+                            <p class="section-name">Digital Smart Wallet</p>
                             <h2
                                 class="section-heading payment__content-heading"
                             >
@@ -492,9 +497,7 @@
                     <div class="deposit__inner">
                         <!-- Payment content -->
                         <section class="deposit__content">
-                            <p class="section-desc section-name">
-                                Digital Smart Wallet
-                            </p>
+                            <p class="section-name">Digital Smart Wallet</p>
                             <h2
                                 class="section-heading deposit__content-heading"
                             >
@@ -596,7 +599,7 @@
             <section class="client">
                 <div class="container">
                     <div class="client__inner">
-                        <p class="section-desc section-name">Our Testimonial</p>
+                        <p class="section-name">Our Testimonial</p>
                         <h2 class="section-heading">What Clients Says</h2>
                         <p class="section-desc client-desc">
                             Read what clients says about us and about our online
@@ -840,9 +843,7 @@
                         <!-- Blog top -->
                         <div class="blog__top">
                             <div class="blog__top-info">
-                                <p class="section-desc section-name">
-                                    Our Blog
-                                </p>
+                                <p class="section-name">Our Blog</p>
                                 <h2 class="section-heading">Get The Updates</h2>
                                 <p class="section-desc blog__top-desc">
                                     Read our blog for the regular updates about
@@ -980,9 +981,7 @@
                         </figure>
 
                         <!-- Content -->
-                        <p class="section-desc section-name app__title">
-                            Our App
-                        </p>
+                        <p class="section-name app__title">Our App</p>
                         <h2 class="section-heading app__heading">
                             Download the Apps
                         </h2>
@@ -1022,6 +1021,143 @@
                 </div>
             </section>
         </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <!-- Footer row -->
+                    <div class="footer__row">
+                        <!-- Column 1 -->
+                        <section class="footer__column">
+                            <a href="#">
+                                <img
+                                    src="./assets/img/Logo.svg"
+                                    alt=""
+                                    class="footer__img"
+                                />
+                            </a>
+                        </section>
+                        <!-- Column 2 -->
+                        <section class="footer__column">
+                            <h3 class="footer__heading">Sitemap</h3>
+                            <ul class="footer__list">
+                                <li>
+                                    <a href="#!" class="footer__link">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="footer__link">
+                                        Abouts
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="footer__link">
+                                        Growers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="footer__link">
+                                        Merchants
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="footer__link">
+                                        Contact
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <!-- Column 3 -->
+                        <section class="footer__column">
+                            <h3 class="footer__heading">Sitemap</h3>
+                            <ul class="footer__list">
+                                <li>
+                                    <a href="#!" class="footer__link">
+                                        Facebook
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="footer__link">
+                                        Linkedin
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="footer__link">
+                                        Instagram
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="footer__link">
+                                        Twitter
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <!-- Column 4 -->
+                        <section class="footer__column">
+                            <h3 class="footer__heading">Sitemap</h3>
+                            <ul class="footer__list">
+                                <li>
+                                    <a
+                                        href="#!"
+                                        class="footer__link footer__link-address"
+                                    >
+                                        Xilliams Corner Wine © 2017. 1112 A
+                                        Market St # Ste B22, Charlottesville, CA
+                                        45565
+                                    </a>
+                                </li>
+                            </ul>
+                            <h3 class="footer__heading footer__heading-news">
+                                News letter
+                            </h3>
+                            <form
+                                method="post"
+                                action="https://api-gateway.fullstack.edu.vn/action_page.php"
+                                autocomplete="off"
+                                class="subscribe__form"
+                            >
+                                <input
+                                    type="email"
+                                    name="email"
+                                    id=""
+                                    placeholder="Email address..."
+                                    class="subscribe__form-input"
+                                    required
+                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                                />
+                                <button
+                                    type="submit"
+                                    class="btn subscribe__form-btn"
+                                >
+                                    Subscribe
+                                </button>
+                            </form>
+                        </section>
+                    </div>
+
+                    <!-- Footer contact -->
+                    <div class="footer__contact">
+                        <a
+                            href="mailto:email@gmail.com"
+                            class="footer__contact-email"
+                        >
+                            email@gmail.com
+                        </a>
+                        <a
+                            href="tel:(123) 456-7890"
+                            class="footer__contact-phone"
+                        >
+                            (123) 456-7890
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p>© 2020 Ligft Media All rights reserved.</p>
+            </div>
+        </footer>
         <script src="./assets/js/slider.js"></script>
     </body>
 </html>

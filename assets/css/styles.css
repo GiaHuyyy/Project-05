@@ -64,6 +64,7 @@ button {
 .section-name {
     display: inline-flex;
     align-items: center;
+    color: #696d77;
     font-size: 1.6rem;
     line-height: 1.75;
 }
@@ -73,7 +74,7 @@ button {
     margin-right: 12px;
     width: 18px;
     height: 2px;
-    background: var(--primary-text);
+    background: #696d77;
 }
 
 .btn {
@@ -1074,4 +1075,104 @@ button {
     font-size: 1.7rem;
     font-weight: 600;
     white-space: nowrap;
+}
+
+/* Footer */
+.footer {
+    padding-top: 100px;
+    background: #fafbff;
+}
+
+.footer__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer__heading {
+    color: var(--primary-heading);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.66;
+}
+
+.footer__list {
+    margin-top: 24px;
+}
+
+.footer__link {
+    display: inline-block;
+    color: #6a6e78;
+    font-size: 1.8rem;
+    line-height: 1.66;
+}
+
+.footer__link:hover,
+.footer__contact-email:hover,
+.footer__contact-phone:hover {
+    opacity: 0.9;
+}
+
+li:not(:first-child) > .footer__link {
+    margin-top: 20px;
+}
+
+.footer__link-address {
+    width: 371px;
+}
+
+.footer__heading-news {
+    margin-top: 48px;
+}
+
+.subscribe__form {
+    display: flex;
+    column-gap: 20px;
+    margin-top: 24px;
+}
+
+.subscribe__form-input {
+    color: #6a6e78;
+    font-size: 1.6rem;
+    padding-left: 12px;
+    width: 270px;
+    height: 52px;
+    border-radius: 6px;
+    border: 1px solid #8e919a;
+}
+
+.subscribe__form-input::placeholder {
+    color: #8e919a;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+.subscribe__form-btn {
+    height: 52px;
+    background: var(--primary-color);
+}
+
+.footer__contact {
+    margin-top: 70px;
+}
+
+.footer__contact-email,
+.footer__contact-phone {
+    color: #6a6e78;
+    font-size: 1.8rem;
+    line-height: 1.66;
+    text-decoration-line: underline;
+}
+
+.footer__contact-email {
+    margin-right: 100px;
+}
+
+.footer__copyright {
+    color: #fff;
+    line-height: 1.75;
+    text-align: center;
+    margin-top: 28px;
+    padding: 28px 0;
+    background: var(--primary-color);
 }
