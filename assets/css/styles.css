@@ -134,36 +134,41 @@ button {
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.75;
-    transition: width 0.4s ease;
+    transition: 0.4s ease;
 }
 
 .navbar__item-link::before,
 .navbar__item-link-active::before {
     position: absolute;
     content: "";
+    left: 24px;
     bottom: 1px;
-    width: 0;
+    width: calc(100% - 48px);
     height: 1px;
+    transform: scaleX(0);
+    transform-origin: bottom right;
     border-radius: 0.5px;
     background: var(--primary-color);
+    transition: transform 0.4s ease-out;
 }
 
 .navbar__item-link-active::before {
-    width: calc(100% - 48px);
+    transform: scaleX(1);
 }
 
 .navbar__item-link:hover {
     color: #212832;
-    text-shadow: 1px 0 0 currentColor;
+    text-shadow: -0.3px -0.3px currentColor, 0.3px 0.3px;
 }
 
 .navbar__item-link:hover::before {
-    width: calc(100% - 48px);
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 .navbar__item-link-active {
     color: #212832;
-    text-shadow: 1px 0 0 currentColor;
+    text-shadow: -0.3px -0.3px currentColor, 0.3px 0.3px;
 }
 
 .header__action {
